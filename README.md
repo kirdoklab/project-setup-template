@@ -30,20 +30,18 @@ Project name
 │   ├── references
 │   └── templates
 │
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
+├── notebooks          <- Jupyter or R notebooks
 │
-├── workflow                <- Source code for use in this project.
-│   ├── Snakefile    <- Makes src a Python module
+├── workflow           <- Source code and snakemake rules 
+│   ├── Snakefile      <- A snakefile, should include all sub rules
 │   │
-│   ├── rules           <- Scripts to download or generate data
+│   ├── rules          <- Seperate snakefile that contains submodules of the workflow
 │   │
-│   ├── environments       <- Scripts to turn raw data into features for modeling
+│   ├── environments   <- Conda environments
 │   │
-│   ├── singularity         <- Scripts to train models and then use trained models to make
+│   └── singularity    <- Singularity containers
 │ 
-├── results
+└── results
 
 ```
 
